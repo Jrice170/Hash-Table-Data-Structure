@@ -78,6 +78,18 @@ class MyUnorderedMap: public Dictionary<K, V>
 
 };
 
+// Should accept a source code file (.cpp for example) via std in
+// Should build a dictionary of the counts of the words in the code file
+// Only count the words that contain the word "Virus" as a substring
+// so that a list of the amount of viruses in the code can be tracked
+// Do not add newlines (\n) to the dictionary (they'll mess up print)
+// Most symbols should be excluded to isolate the actual keywords and 
+// variable names in the code. A full list of the symbols that
+// should be ignored are in the README
+// ./a.out < sample_code.cpp should be the form of input
+void get_virus_frequency(MyMap<std::string, int> &in_tree);
+
+
 #include "MyUnorderedMap.hpp"
 
 #endif
