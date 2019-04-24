@@ -19,7 +19,7 @@ Your tasks are:
 arbitrary number of lines from standard input and builds a MyUnorderedMap containing the
 number of occurances for every word containing the word "Virus" in it, i.e., if the word
 "CryptoLockerVirus" appears 15 times in the input code, then map["CryptoLockerVirus"] should return 15.
-An example of the behavior of this function is at the end of pa06.cpp, which expects \<sample_code.cpp
+An example of the behavior of this function is at the end of pa06.cpp, which expects \<sample_input.txt
 
 ## Assignment Notes
 You will implement a dictionary (abstract data type) using a hash table
