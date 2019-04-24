@@ -21,7 +21,16 @@ number of occurances for every word containing the word "Virus" in it, i.e., if 
 "CryptoLockerVirus" appears 15 times in the input code, then map["CryptoLockerVirus"] should return 15.
 An example of the behavior of this function is at the end of pa06.cpp, which expects \<sample_input.txt
 
+
 ```cpp
+// Some actual C++ source code (your sample_input.txt)
+
+cout <<bigbadvirus()<< endl;
+```
+
+```cpp
+// your actual get_virus_frequency code:
+
 myhashdictionary["bigbadvirus"] = 1;
 
 myhashdictionary["bigbadvirus"]++;
@@ -29,6 +38,7 @@ myhashdictionary["bigbadvirus"]++;
 
 
 ```sh
+# This is how you'd run
 g++ pa08.cpp
 
 ./a.out <sample_input.txt
