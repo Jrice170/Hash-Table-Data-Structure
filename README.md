@@ -21,6 +21,11 @@ number of occurances for every word containing the word "Virus" in it, i.e., if 
 "CryptoLockerVirus" appears 15 times in the input code, then map["CryptoLockerVirus"] should return 15.
 An example of the behavior of this function is at the end of pa06.cpp, which expects \<sample_input.txt
 
+`
+g++ pa08.cpp
+./a.out <sample_input.txt
+`
+
 ## Assignment Notes
 You will implement a dictionary (abstract data type) using a hash table
 data structure that will have similar functionality to std::unordered_map.
