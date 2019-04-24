@@ -25,17 +25,16 @@ An example of the behavior of this function is at the end of pa06.cpp, which exp
 ```cpp
 // Some actual C++ source code (your sample_input.txt)
 
-cout <<bigbadvirus()<< endl;
+cout <<reallyBig_badvirus()<< endl;
 ```
 
 ```cpp
 // your actual get_virus_frequency code:
 
-myhashdictionary["bigbadvirus"] = 1;
+myhashdictionary["reallyBig_badvirus"] = 1;
 
-myhashdictionary["bigbadvirus"]++;
+myhashdictionary["reallyBig_badvirus"]++;
 ```
-
 
 ```sh
 # This is how you'd run
