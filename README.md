@@ -23,7 +23,7 @@ An example of the behavior of this function is at the end of pa06.cpp, which exp
 
 
 ```cpp
-// Some actual C++ source code (your sample_input.txt)
+// Some actual C++ source code (your sample_input.cpp)
 
 cout <<reallyBig_badvirus37()<< endl;
 ```

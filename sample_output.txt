@@ -1,0 +1,15 @@
+([FATvirus12]=2,
+ [ZEUSVIRUS]=7,
+ [_stealthvirus_]=3,
+ [dIREct0rYViruS]=8,
+ [b00tsectorvirus]=12,
+ [cryPtOLockERvIruS66]=18,
+ [FLashbaCkviRUS]=2,
+ [_slaMMErviRus2]=3,
+ [st0rMWorMviRus]=3,
+ [spAceFiLLervirUs]=8,
+ [macRO_virUs]=4,
+ [nImdaVirus_]=47,
+ [mUltIpartIteVirus24]=10,
+ [redALERTvirus__]=2)
+

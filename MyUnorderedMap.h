@@ -59,8 +59,11 @@ class MyUnorderedMap: public Dictionary<K, V>
         // Backwards in order traversal print (for BST)
         // For Hash table, just print all elements in any order, 
         // so that it looks like this when you print(unordereded_map_obj):
-        // [(K0: V0), (K1: V1), (K2: V2)]
-        // Do not use any newlines or endl in this function.
+        // ([K0]=V0, 
+        //  [K1]=V1, 
+        //  [K2]=V2)
+        // With a newline at the end
+        // Like in sample_output.txt
         // Do not modify the table.
         // Only print valid current data elements.
         void print() const;
