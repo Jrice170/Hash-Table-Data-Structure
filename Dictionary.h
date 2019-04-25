@@ -9,7 +9,6 @@
  *
  * To figure out what the below functions should do, consult the following links.
  * http://en.cppreference.com/w/cpp/container/unordered_map
- * http://www.cplusplus.com/reference/unordered_map/unordered_map/
  * Many of the functions will be simplified single-parameter versions of the multiple std:: options
  * Where they differ, we have made a brief note in these source files here.
  *
@@ -19,7 +18,7 @@
  * Now that you have learned unit testing with Catch and basic C++, 
  * I suggest writing your own unit tests for each function! 
  * Perhaps you should write your unit tests first using the std::unordered_map for some functions
- * Remember: Test with multiple value (V) types!
+ * Remember: Test with multiple value (V) types! (We'll only test with string K types)
  *
  * Files you should submit:
  * MyUnorderedMap.hpp

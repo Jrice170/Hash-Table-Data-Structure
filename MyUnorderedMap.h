@@ -22,7 +22,8 @@ class MyUnorderedMap: public Dictionary<K, V>
         int data_size = 0;
         int reserved_size = 0;
 
-        // To make it easier on you (rather than use void pointers) we'll only test with std::string keys (remember values can be any type)
+        // To make it easier on you (rather than use void pointers or crazy new C++ templating) 
+        // we'll only test with std::string keys (remember values can be any type)
         int hash(const K &key) const;
         
     public:

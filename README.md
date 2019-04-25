@@ -21,6 +21,32 @@ number of occurances for every word containing the word "Virus" in it, i.e., if 
 "CryptoLockerVirus" appears 15 times in the input code, then map["CryptoLockerVirus"] should return 15.
 An example of the behavior of this function is at the end of pa06.cpp, which expects \<sample_input.txt
 
+
+```cpp
+// Some actual C++ source code (your sample_input.txt)
+
+cout <<reallyBig_badvirus37()<< endl;
+```
+
+```cpp
+// your actual get_virus_frequency code:
+
+myhashdictionary["reallyBig_badvirus37"] = 1;
+
+myhashdictionary["reallyBig_badvirus37"]++;
+```
+
+```sh
+# This is how you'd run
+
+g++ pa08.cpp
+
+./a.out <sample_input.txt
+```
+
+Hint: you cant just define word boundaries by spaces, because this is code. 
+You will need to define word boundaries by special characters too.
+
 ## Assignment Notes
 You will implement a dictionary (abstract data type) using a hash table
 data structure that will have similar functionality to std::unordered_map.
@@ -32,9 +58,6 @@ Deliverable: You must submit a file, `MyUnorderedMap.hpp`, that contains the imp
 2. get_virus_frequency()
 3. your name function
 
-Remember, the assignment due date is posted on the course website:
-https://web.mst.edu/~taylorpat/Courses_files/DataStructures/Content.html
-
-Git commands and a Git cheatsheet are posted at the following link, under the heading "Programming Assignments":
-http://web.mst.edu/~taylorpat/Courses_files/DataStructures/Syllabus.html
+Remember, the assignment due date is posted on the course website.
+Git commands and a Git cheatsheet are posted under the syllabus, under the heading "Programming Assignments":
 
