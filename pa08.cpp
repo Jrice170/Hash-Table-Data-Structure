@@ -50,6 +50,10 @@ int main()
         cout << e.what();
     }
 
+    MyUnorderedMap<std::string, int> virus_tree;
+    // get_virus_frequency(virus_tree);
+    // virus_tree.print();
+
     return 0;
 }
 
