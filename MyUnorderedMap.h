@@ -90,7 +90,7 @@ class MyUnorderedMap: public Dictionary<K, V>
 // Most symbols should be excluded to isolate the actual keywords and 
 // variable names in the code
 // ./a.out <sample_code.cpp should be the form of input
-void get_virus_frequency(MyMap<std::string, int> &in_tree);
+void get_virus_frequency(MyUnorderedMap<std::string, int> &in_tree);
 
 
 #include "MyUnorderedMap.hpp"
