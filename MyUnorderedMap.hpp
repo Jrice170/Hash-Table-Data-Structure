@@ -239,7 +239,12 @@ void MyUnorderedMap<K, V>::erase(const K &key)
 
 
     }
+    if(data_size == reserved_size*(0.1))
+    {
 
+        reserve(reserved_size*0.3);
+
+    }
 
 
 }
@@ -304,7 +309,7 @@ void MyUnorderedMap<K,V>::print()const
 
 
     }
-    
+
 
 
 }
