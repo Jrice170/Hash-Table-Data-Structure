@@ -79,7 +79,22 @@ class MyUnorderedMap: public Dictionary<K, V>
         // and to shrink the HT when it becomes 10% full, to a resulting 30%.
         // Remember to re-hash!
         void reserve(int new_cap);
+        
+        // Added as grader functions:
+        MyPair<K, V> * grade_m_data()
+        {
+            return m_data;
+        }
+        
+        int grade_reserved_size()
+        {
+            return reserved_size;
+        }
 
+        int grade_data_size()
+        {
+            return data_size;
+        }
 };
 
 // Should accept a source code file (.cpp for example) via std in
