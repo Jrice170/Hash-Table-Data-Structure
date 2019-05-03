@@ -1,2 +1,2 @@
 Username (not for points),at.cpp,clear.cpp,copy_constructor.cpp,count.cpp,default_constructor.cpp,empty.cpp,erase.cpp,find.cpp,insert.cpp,operator_bracket.cpp,operator_eq.cpp,reserve.cpp,size.cpp,virus.cpp,"Username accurate (0 good, 1 bad)",Bytes definitely lost (memory leak) (0 is perfect),time_tests/operator_bracket.cpp,Print function (0 is perfect)
-jmr3by,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,fail,0,0,4.485482985550061,49
+jmr3by,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,pass,fail,0,0,4.6410241310501075,52
