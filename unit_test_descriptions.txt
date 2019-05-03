@@ -1,0 +1,115 @@
+at.cpp:
+Creates dict
+Fills dict with dict["a"]='a', dict["b"]='b', and dict["c"]='c'
+Test fails if at("a")!='a', at("b")!='b', etc
+Finally, at("d") is called to test the custom error, and test
+fails if any other error but std::out_of_range is caught
+
+clear.cpp:
+Creates dict
+Fills dict with dict["a"]='a' and dict["b"]='b'
+Calls dict.clear()
+Fails if m_data is not nullptr, or if reserved size!=0, or if data_size!=0
+
+copy_constructor.cpp:
+Creates dict
+Fills dict with dict["a"]='a', dict["b"]='b', and dict["c"]='c'
+Creates second dictionary using copy ctor with dictionary 1 as the argument
+Deletes "a" from dictionary 1
+Checks that count("a")==1 for dictionary 2, effectively testing deep copy
+Checks that dict2["b"]='b'
+
+count.cpp:
+Creates dict
+Fills dict with dict["a"]='a', dict["b"]='b', and dict["c"]='c'
+Erases "b" and "c"
+Sets dict["c"]='?'
+Tests that count("a")=1, count("b")=0, count("c")=1, and that dict["c"]='?'
+
+default_constructor.cpp:
+Creates two maps, one for character values and one for long values
+Checks that m_data is nullptr, reserved_size is 0, and data_size is 0 for both maps
+
+empty.cpp:
+Creates a dictionary
+Checks that empty() is true
+Fills dict with dict["a"]='a'
+Checks that empty is false
+
+erase.cpp:
+Creates dict
+Fills dict with dict["a"]='a', dict["b"]='b', and dict["c"]='c'
+Erases "b" and "c"
+Sets dict["c"]='?'
+Uses count function to check that "b" was removed
+Calls at("b") to ensure that a out_of_range error is thrown, ensuring that it was erased
+
+find.cpp:
+Creates dict
+Fills dict with dict["a"]='a', and dict["b"]='b'
+Creates a MyPair pointer set to find("a")
+Creates another MyPair pointer set to find("d")
+Checks that the first pair has "a" as key and 'a' as value
+Checks that second pair is nullptr
+
+insert.cpp:
+Creates a dictionary and MyPair("a",'a')
+Inserts the MyPair into the dictionary
+Checks that dict["a"]='a'
+
+operator_bracket.cpp:
+Creates dict
+Fills dict with dict["a"]='a', dict["b"]='b', dict["c"]='c'
+Overwrites dict["c"] with 'd'
+Checks that dict["a"]='a', dict["b"]='b', and dict["c"]='d'
+
+operator_eq.cpp:
+Creates dict
+Fills dict with dict["a"]='a', dict["b"]='b', and dict["c"]='c'
+Makes second dictionary
+Sets dictionary2 = dictionary1
+Erases "a" from dictionary 1
+Ensures that "a" still exists in dict2 and that it doesn't exist in dict1, ensuring deep copy
+
+reserve.cpp:
+Creates dict
+Fills dict with dict["a"]='a', and dict["b"]='b'
+Calls reserve(1000)
+Ensures data_size=2, reserved_size=1000, and that the two entries still exist
+Calls reserve(100)
+Checks that reserved_size=100, data_size=2, and that the two entries still exist
+
+size.cpp:
+Creates a dictionary
+Checks that size()==0
+Adds dict["a"]='a'
+Checks size()==1
+Adds dict["b"]='b'
+Checks size()==2
+
+virus.cpp:
+Creates a dictionary
+Calls get_virus_freq()
+For every type of virus string in the test code, Ensure that dict.count()!=0,
+that the amount for that particular string matches the number in the answers file,
+and makes sure that your map.empty() is false
+After checking a string, the string is erased from the map
+After all strings are checked, we check that empty() is true to ensure that your hash table
+only included entries with the correct virus strings and nothing else
+
+print.cpp:
+Creates a dictionary
+Fills it with dict["a"]='a' and dict["b"]='b'
+Prints it and checks that it matches one of the two possible ways you could have printed it,
+including the newline at the end
+
+time_test:
+Creates a dictionary
+For 5000 times, creates a random key of 5 random alphanumeric characters
+Each key is placed in the dictionary with value 'a'
+There is a 20% chance the newly added value will be erased
+This test is run 20 times per student and the excecution time is averaged over the 20 runs
+
+
+
+
