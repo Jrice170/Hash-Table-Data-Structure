@@ -1,5 +1,4 @@
 
-
 #include "MyUnorderedMap.h"
 
 void get_identity(std::string & my_id)
@@ -396,20 +395,7 @@ void get_virus_frequency(MyUnorderedMap<std::string, int> &in_tree)
 {
 
 
-   in_tree["FATvirus12"]=2;
-   in_tree["ZEUSVIRUS"]=7;
-   in_tree["_stealthvirus_"]=3;
-   in_tree["dIREct0rYViruS"]=8;
-   in_tree["b00tsectorvirus"]=12;
-   in_tree.insert(MyPair<std::string, int>("cryPtOLockERvIruS66",18));
-   in_tree.insert(MyPair<std::string, int>("FLashbaCkviRUS",2));
-   in_tree.insert(MyPair<std::string, int>("_slaMMErviRus2",3));
-   in_tree.insert(MyPair<std::string, int>("st0rMWorMviRus",3));
-   in_tree.insert(MyPair<std::string, int>("spAceFiLLervirUs",8));
-   in_tree.insert(MyPair<std::string, int>("macRO_virUs",4));
-   in_tree.insert(MyPair<std::string, int>("nImdaVirus_",47));
-   in_tree.insert(MyPair<std::string, int>("mUltIpartIteVirus24",10));
-   in_tree.insert(MyPair<std::string, int>("redALERTvirus__",2));
+  
 
 
 
